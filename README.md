@@ -114,10 +114,28 @@ CMD ["run.sh"]
 ```
 
 
+
+
+### Creating Core
+```shell
+docker-compose run --rm app sh -c "python manage.py startapp core"
+```
+### Migrations
+```shell
+docker-compose run --rm app sh -c "python manage.py makemigrations"
+```
+
+
+
 ## Creating Django Project using Django CLI on Docker
+
+
+
 ```shell
 docker-compose run --rm app sh -c "django-admin startproject app ."
 ```
+
+
 
 [EC2-Docker](https://zenn.dev/ttani/articles/docker-install-deploy-ec2)
 
